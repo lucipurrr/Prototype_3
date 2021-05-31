@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -6,44 +7,26 @@ using UnityEngine;
 public class MoveLeft : MonoBehaviour
 {
     private float speed = 30;
-    
+    private PlayerController playerControllerScript;
+    private float leftBound = -15;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
-        
-        var menu = new GenericMenu();
+        if (playerControllerScript.gameOver == false)
+        {
+            transform.Translate(Vector3.left * (Time.deltaTime * speed));
+        }
 
-        Debug.Log("hueta");
-
-        PinObject pinnedItems = null;
-        Items item = null;
-        if (!pinnedItems.Contains(item.id))
-            menu.AddItem(new GUIContent("Pin"), false, () => pinnedItems.Add(item.id));
-        else return;
-    }
-}
-
-internal class Items
-{
-    public object id;
-}
-
-internal class PinObject
-{
-    public bool Contains(object id)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void Add(object itemID)
-    {
-        throw new System.NotImplementedException();
+        if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -356,3 +356,7 @@
 /Users/olga.diakonova/Documents/Unity Projects/Prototype 3/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/olga.diakonova/Documents/Unity Projects/Prototype 3/obj/Debug/Assembly-CSharp.dll
 /Users/olga.diakonova/Documents/Unity Projects/Prototype 3/obj/Debug/Assembly-CSharp.pdb
+/Users/olga.diakonova/Documents/Unity Projects/Prototype 3/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/olga.diakonova/Documents/Unity Projects/Prototype 3/Temp/bin/Debug/UltEvents.pdb
+/Users/olga.diakonova/Documents/Unity Projects/Prototype 3/Temp/bin/Debug/UnityEditor.UI.dll.mdb
+/Users/olga.diakonova/Documents/Unity Projects/Prototype 3/Temp/bin/Debug/UnityEditor.UI.xml

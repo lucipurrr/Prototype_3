@@ -637,6 +637,12 @@
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.31f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UltEvents.csproj">
+      <Project>{E01AC9A8-A714-E835-3FAF-B24CEAF83FC9}</Project>
+      <Name>UltEvents</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
